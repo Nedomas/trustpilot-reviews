@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "history": "^4.7.2",
+    "radium": "^0.22.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-messenger-customer-chat": "^0.4.0",

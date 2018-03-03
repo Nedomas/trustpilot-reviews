@@ -16,13 +16,18 @@ body {
 }
 .reviewer__stars input + label {
   font-size: 0;
-  /* 
+  /*
   These are in the opposite DOM order re-order them to be visually in normal order
    */
 }
 .reviewer__stars input + label:before {
   content: "★";
-  font-size: 2.2rem;
+  font-size: 2rem;
+  background-color: #C8C8C8;
+  padding: 2px 5px;
+  margin-right: 10px;
+  border-radius: 5px;
+  color: #fff;
 }
 .reviewer__stars input + label[for="star5"] {
   order: 5;
@@ -41,5 +46,9 @@ body {
 }
 .reviewer__stars input + label:hover,
 .reviewer__stars input + label:hover ~ label {
-  color: #ffff66;
+}
+
+.reviewer__stars input + label:hover:before {
+  background-color: #F7CB35;
+  color: #fff;
 }

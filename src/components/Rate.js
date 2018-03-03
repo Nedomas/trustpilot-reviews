@@ -170,7 +170,7 @@ const styles = {
     },
   },
   stars: {
-    marginTop: '-20px',
+    marginTop: '-15px',
   },
   title: {
     container: {
