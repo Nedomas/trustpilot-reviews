@@ -32,7 +32,7 @@ class Rate extends Component {
       <div>
         <div style={styles.header}>
           <div style={styles.innerContainer}>
-            <img src='/trustpilot-logo.png' style={styles.logo} />
+            <img src='/trustpilot-logo.png' style={styles.logo} alt=""/>
           </div>
         </div>
 

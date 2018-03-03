@@ -23,7 +23,7 @@ body {
 .reviewer__stars input + label:before {
   content: "★";
   font-size: 2rem;
-  background-color: #C8C8C8;
+  background-color: #c8c8c8;
   padding: 2px 5px;
   margin-right: 10px;
   border-radius: 5px;
@@ -49,14 +49,29 @@ body {
 }
 
 .reviewer__stars input + label:hover:before {
-  background-color: #F7CB35;
+  background-color: #f7cb35;
   color: #fff;
 }
 
 .header {
+  padding: 50px 150px 0px 150px;
   width: auto;
-  height: 660px;
+  height: 600px;
   background-image: url("background.png");
+}
+
+.header--nav,
+.header--content {
+  display: flex;
+  align-items: center;
+}
+
+.header--content {
+  margin-top: 50px;
+}
+
+.header--info {
+  margin-right: 50px;
 }
 
 .header--title {
@@ -68,7 +83,7 @@ body {
   text-align: left;
 }
 
-.What-if-we-told-you {
+.header--text {
   width: 365px;
   height: 50px;
   opacity: 0.7;
@@ -81,4 +96,58 @@ body {
   letter-spacing: 0.5px;
   text-align: left;
   color: #7f7f7f;
+}
+
+.illustration {
+  width: 639px;
+  height: 382px;
+  object-fit: contain;
+}
+
+.button {
+  width: 195px;
+  height: 46px;
+  border-radius: 5px;
+  background-color: #73b143;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.11);
+  border: 0;
+}
+
+.button__demo {
+  width: 140px;
+  margin-left: 10px;
+}
+
+.button span {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.logo_black {
+  margin-right: auto;
+  width: 232px;
+  height: 63px;
+}
+
+.link {
+  margin: 0px 20px 0px 20px;
+  width: 54px;
+  height: 17px;
+  opacity: 0.6;
+  font-family: Lato;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-align: right;
+  color: #000000;
+}
+
+.info {
+  width: 1499px;
+  height: 906px;
+  background-color: #ffffff;
+  border: solid 1px #ededed;
 }
