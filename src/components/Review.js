@@ -5,15 +5,17 @@ class Review extends Component {
     return (
       <style>
         {
-          "html {background: url(./images/mock-bg-v1.png) no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}"
+          "html {background: url(./images/mock-bg-v1.png) center top no-repeat fixed;}"
         }
       </style>
     );
   }
 }
 
-document.querySelector("html").addEventListener("click", () => {
-  window.location.href = "demo";
-});
+if (window.location.href.endsWith("start")) {
+  document.querySelector("html").addEventListener("click", () => {
+    window.location.href = "rate";
+  });
+}
 
 export default Review;

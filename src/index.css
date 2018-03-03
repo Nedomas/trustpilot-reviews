@@ -52,3 +52,33 @@ body {
   background-color: #F7CB35;
   color: #fff;
 }
+
+.header {
+  width: auto;
+  height: 660px;
+  background-image: url("background.png");
+}
+
+.header--title {
+  width: 388px;
+  height: 80px;
+  font-family: Lato;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: left;
+}
+
+.What-if-we-told-you {
+  width: 365px;
+  height: 50px;
+  opacity: 0.7;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.56;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #7f7f7f;
+}
