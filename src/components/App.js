@@ -31,11 +31,7 @@ class App extends Component {
         </header>
         <button onClick={() => this.handleBadReview()}>This is shit</button>
 
-        {badReview && <style>
-          #fb-root {
-            display: initial;
-          }
-        </style>}
+        {badReview && <style>{"#fb-root {display: initial;}"}</style>}
         <MessengerCustomerChat
           pageId="369078686897983"
           appId="369233150149061"
