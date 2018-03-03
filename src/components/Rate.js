@@ -38,7 +38,7 @@ class Rate extends Component {
 
         <div style={styles.innerContainer}>
           <div style={styles.headline}>
-            Voice your opinion! Review Apple Support now.
+            Voice your opinion! Review <span style={styles.company}>InVision</span> now.
           </div>
 
           <div style={styles.splitContainer}>
@@ -137,7 +137,7 @@ const styles = {
       display: 'flex',
     },
     description: {
-      padding: '20px 10px',
+      padding: '0 10px',
       color: '#7E7E7E',
       fontStyle: 'italic',
     },
@@ -183,5 +183,9 @@ const styles = {
       backgroundColor: '#F2F2F2',
       border: '1px solid #A9A9A9',
     },
+  },
+  company: {
+    color: '#428bca',
+    fontWeight: 550,
   },
 };
