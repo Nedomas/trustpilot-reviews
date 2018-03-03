@@ -66,6 +66,11 @@ body {
 .header--content {
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.header--info {
+  margin-right: auto;
 }
 
 .header--content {
