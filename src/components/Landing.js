@@ -6,6 +6,7 @@ class Landing extends Component {
       <div>
         <Header />
         <Info />
+        <Footer />
       </div>
     );
   }
@@ -88,6 +89,44 @@ class Info extends Component {
         <button className="button">
           <span>LEARN MORE</span>
         </button>
+      </div>
+    );
+  }
+}
+
+class Footer extends Component {
+  render() {
+    return (
+      <div className="footer">
+        <div className="footer--top">
+          <div className="left">
+            <img src="/facebook.png" className="footer--icon" alt="" />
+            <img src="/linkedin.png" className="footer--icon" alt="" />
+            <img src="/twitter.png" className="footer--icon" alt="" />
+            <img src="/instagram.png" className="footer--icon" alt="" />
+          </div>
+          <div className="right">
+            <p className="link">HOME</p>
+            <p className="link">ABOUT</p>
+            <button
+              className="button button__demo"
+              onClick={() => (window.location.href = "start")}
+            >
+              <span>DEMO</span>
+            </button>
+          </div>
+        </div>
+        <div className="footer--bottom">
+          <div className="left">
+            <h5>POWERED BY</h5>
+            <img src="/group-2.png" alt="" />
+          </div>
+          <p className="right">
+            <span>PRIVACY</span>
+            <span>DISCLAIMER</span>
+            <span>COPYRIGHT 2018</span>
+          </p>
+        </div>
       </div>
     );
   }
