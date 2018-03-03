@@ -33,7 +33,7 @@ class App extends Component {
         <MessengerCustomerChat
           pageId="369078686897983"
           appId="369233150149061"
-          style={badReview ? {} : { display: "none !important" }}
+          className={badReview ? "" : "disabled"}
         />
       </div>
     );

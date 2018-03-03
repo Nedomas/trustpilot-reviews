@@ -43,3 +43,7 @@ body {
 .reviewer__stars input + label:hover ~ label {
   color: #ffff66;
 }
+
+.disabled {
+  display: none !important;
+}
