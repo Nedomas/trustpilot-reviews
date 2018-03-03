@@ -5,6 +5,8 @@ import '../index.css';
 
 import Landing from './Landing';
 import Rate from './Rate';
+import Demo from './Demo';
+import Review from './Review';
 
 class App extends Component {
   render() {
@@ -12,6 +14,8 @@ class App extends Component {
       <div>
         <Route exact path='/' component={Landing}/>
         <Route exact path='/rate' component={Rate}/>
+        <Route exact path='/demo' component={Demo}/>
+        <Route exact path='/start' component={Review}/>
       </div>
     );
   }
