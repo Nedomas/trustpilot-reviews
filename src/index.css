@@ -43,7 +43,3 @@ body {
 .reviewer__stars input + label:hover ~ label {
   color: #ffff66;
 }
-
-#fb-root {
-  display: none;
-}
