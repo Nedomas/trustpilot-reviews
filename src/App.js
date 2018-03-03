@@ -16,6 +16,7 @@ class App extends Component {
         </p>
         <MessengerCustomerChat
           pageId='369078686897983'
+          appId='369233150149061'
         />
       </div>
     );
