@@ -26,11 +26,8 @@ class App extends Component {
     return (
       <div>
         <header>
-          <h1>TRUSTUM.io</h1>
           <Stars handleClick={num => this.handleReview(num)} />
         </header>
-        <button onClick={() => this.handleBadReview()}>This is shit</button>
-
         {badReview ? (
           <style>{"#fb-root {display: initial;}"}</style>
         ) : (
