@@ -30,10 +30,15 @@ class App extends Component {
           <Stars handleClick={num => this.handleReview(num)} />
         </header>
         <button onClick={() => this.handleBadReview()}>This is shit</button>
+
+        {badReview && <style>
+          #fb-root {
+            display: initial;
+          }
+        </style>}
         <MessengerCustomerChat
           pageId="369078686897983"
           appId="369233150149061"
-          className={badReview ? "" : "disabled"}
         />
       </div>
     );

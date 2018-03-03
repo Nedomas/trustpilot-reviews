@@ -44,6 +44,6 @@ body {
   color: #ffff66;
 }
 
-.disabled {
-  display: none !important;
+#fb-root {
+  display: none;
 }
