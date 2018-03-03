@@ -133,7 +133,7 @@ body {
 
 .logo_black {
   margin-right: auto;
-  width: 232px;
+  width: 199px;
   height: 63px;
 }
 
@@ -265,7 +265,7 @@ body {
 }
 
 .footer--icon {
-  margin-right: 30px;
+  margin-right: 40px;
   width: 17.9px;
   height: 17.9px;
   object-fit: contain;
@@ -284,7 +284,7 @@ body {
 
 .left {
   margin-right: auto;
-  width: 200px;
+  width: 230px;
   display: flex;
   justify-content: center;
   align-items: center;
