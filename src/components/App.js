@@ -30,12 +30,11 @@ class App extends Component {
           <Stars handleClick={num => this.handleReview(num)} />
         </header>
         <button onClick={() => this.handleBadReview()}>This is shit</button>
-        {badReview && (
-          <MessengerCustomerChat
-            pageId="369078686897983"
-            appId="369233150149061"
-          />
-        )}
+        <MessengerCustomerChat
+          pageId="369078686897983"
+          appId="369233150149061"
+          style={badReview ? {} : { display: "none" }}
+        />
       </div>
     );
   }
