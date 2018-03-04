@@ -160,16 +160,16 @@ body {
 }
 
 .info h2 {
-  width: 730px;
-  height: 32px;
+  max-width: 730px;
+  min-height: 32px;
   font-family: "Lato";
   font-size: 26px;
   color: #000000;
 }
 
 .info p {
-  width: 713px;
-  height: 76px;
+  max-width: 713px;
+  min-height: 76px;
   opacity: 0.7;
   font-family: "Lato";
   font-size: 16px;
@@ -302,4 +302,92 @@ body {
 
 .footer--bottom p span {
   margin: 0px 5px 0px 5px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .header--illustration {
+    display: none;
+  }
+  .info--cards {
+    display: block;
+  }
+  .info--card {
+    margin: 0;
+  }
+  .info--card:nth-child(2) {
+    margin: 30px 0px 30px 0px;
+  }
+  .info {
+    height: 1800px;
+  }
+}
+
+@media only screen and (max-width: 965px) {
+  .footer {
+    align-items: center;
+  }
+  .footer--top,
+  .footer--bottom {
+    display: block;
+  }
+  .left {
+    margin: auto;
+  }
+  .footer--icon {
+    margin: auto auto 30px auto;
+  }
+  .info h2 {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .info {
+    height: 1950px;
+  }
+  .right {
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  .footer {
+    padding: 0;
+    height: 350px;
+  }
+  .footer .button__demo {
+    margin-bottom: 20px;
+  }
+  .footer--bottom,
+  .footer--top {
+    padding: 10px 0px 10px 0px;
+  }
+  .info--card {
+    width: 310px;
+  }
+  .info h2 {
+    padding: 0px 10px 0px 10px;
+  }
+  .info p {
+    padding: 0px 10px 0px 10px;
+  }
+  .header {
+    padding: 20px 20px 20px 20px;
+  }
+  .header--content {
+    flex-direction: column;
+  }
+
+  .header--title {
+    width: auto;
+    height: auto;
+  }
+  .header--text {
+    height: auto;
+    width: auto;
+  }
+  .logo_black {
+    margin-right: 10px;
+  }
+  .header--nav p {
+    display: none;
+  }
 }
