@@ -95,7 +95,6 @@ class Rate extends Component {
           appId="369233150149061"
           loggedInGreeting="Tell us more about the problem."
           loggedOutGreeting="Tell us more about the problem."
-          themeColor="red"
         />
       </div>
     );
