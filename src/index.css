@@ -391,3 +391,8 @@ body {
     display: none;
   }
 }
+
+textarea::placeholder {
+  font-family: Arial;
+  opacity: 0.6;
+}
