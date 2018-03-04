@@ -133,7 +133,7 @@ body {
 
 .logo_black {
   margin-right: auto;
-  width: 199px;
+  min-width: 199px;
   height: 63px;
 }
 
