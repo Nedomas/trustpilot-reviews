@@ -8,13 +8,13 @@ class Rate extends Component {
 
     this.state = {
       badReview: false,
-      opened: false,
+      opened: false
     };
   }
 
   handleReview(num) {
     this.setState({
-      opened: true,
+      opened: true
     });
 
     if (num > 3) return;
@@ -32,20 +32,19 @@ class Rate extends Component {
       <div>
         <div style={styles.header}>
           <div style={styles.innerContainer}>
-            <img src='/trustpilot-logo.png' style={styles.logo} alt=""/>
+            <img src="/trustpilot-logo.png" style={styles.logo} alt="" />
           </div>
         </div>
 
         <div style={styles.innerContainer}>
           <div style={styles.headline}>
-            Voice your opinion! Review <span style={styles.company}>InVision</span> now.
+            Voice your opinion! Review{" "}
+            <span style={styles.company}>InVision</span> now.
           </div>
 
           <div style={styles.splitContainer}>
             <div style={styles.rating.container}>
-              <div style={styles.rating.label}>
-                Rating
-              </div>
+              <div style={styles.rating.label}>Rating</div>
               <div style={styles.rating.stars}>
                 <div style={styles.stars}>
                   <Stars handleClick={num => this.handleReview(num)} />
@@ -56,31 +55,31 @@ class Rate extends Component {
               </div>
 
               <div style={styles.comment.container}>
-                <div style={styles.rating.label}>
-                  Your review
-                </div>
-                <textarea style={styles.comment.textarea} placeholder='Share your honest experience, and help others make better choices.'/>
+                <div style={styles.rating.label}>Your review</div>
+                <textarea
+                  style={styles.comment.textarea}
+                  placeholder="Share your honest experience, and help others make better choices."
+                />
               </div>
 
               <div style={styles.title.container}>
-                <div style={styles.rating.label}>
-                  Title of your review
-                </div>
+                <div style={styles.rating.label}>Title of your review</div>
                 <input style={styles.title.input} />
               </div>
             </div>
             <div style={styles.description.container}>
-              <div style={styles.description.headline}>
-                What is Trustpilot?
-              </div>
+              <div style={styles.description.headline}>What is Trustpilot?</div>
               <div style={styles.description.description}>
-                Trustpilot is a review community. We help consumers everywhere find companies they can trust.
+                Trustpilot is a review community. We help consumers everywhere
+                find companies they can trust.
               </div>
               <div style={styles.description.headline}>
                 Share your experiences
               </div>
               <div style={styles.description.description}>
-                and be a part of our community. It couldn't be easier - with your Trustpilot account you can write, edit and share your reviews from one convenient location.
+                and be a part of our community. It couldn't be easier - with
+                your Trustpilot account you can write, edit and share your
+                reviews from one convenient location.
               </div>
             </div>
           </div>
@@ -94,6 +93,9 @@ class Rate extends Component {
         <MessengerCustomerChat
           pageId="369078686897983"
           appId="369233150149061"
+          loggedInGreeting="Tell us more about the problem."
+          loggedOutGreeting="Tell us more about the problem."
+          themeColor="red"
         />
       </div>
     );
@@ -104,88 +106,88 @@ export default Rate;
 
 const styles = {
   innerContainer: {
-    maxWidth: '960px',
-    margin: '0 auto',
+    maxWidth: "960px",
+    margin: "0 auto"
   },
   header: {
-    borderBottom: '1px solid #EEEEEE',
+    borderBottom: "1px solid #EEEEEE"
   },
   logo: {
-    height: '50px',
+    height: "50px"
   },
   headline: {
-    padding: '30px 0',
-    fontSize: '30px',
+    padding: "30px 0",
+    fontSize: "30px"
   },
   splitContainer: {
-    display: 'flex',
-    alignItems: 'flex-start',
+    display: "flex",
+    alignItems: "flex-start"
   },
   rating: {
     container: {
-      backgroundColor: '#F2F2F2',
-      padding: '30px 30px',
-      borderRadius: '5px',
-      width:'60%',
+      backgroundColor: "#F2F2F2",
+      padding: "30px 30px",
+      borderRadius: "5px",
+      width: "60%"
     },
     label: {
-      color: '#7E7E7E',
+      color: "#7E7E7E",
       fontWeight: 550,
-      fontSize: '18px',
+      fontSize: "18px"
     },
     stars: {
-      display: 'flex',
+      display: "flex"
     },
     description: {
-      padding: '0 10px',
-      color: '#7E7E7E',
-      fontStyle: 'italic',
-    },
+      padding: "0 10px",
+      color: "#7E7E7E",
+      fontStyle: "italic"
+    }
   },
   description: {
     container: {
-      paddingLeft: '20px',
-      width: '40%',
+      paddingLeft: "20px",
+      width: "40%"
     },
     headline: {
-      paddingTop: '30px',
-      color: '#2D5095',
-      fontSize: '21px',
-      fontWeight: 550,
+      paddingTop: "30px",
+      color: "#2D5095",
+      fontSize: "21px",
+      fontWeight: 550
     },
     description: {
-      color: '#7E7E7E',
-    },
+      color: "#7E7E7E"
+    }
   },
   comment: {
     container: {
-      paddingTop: '10px',
+      paddingTop: "10px"
     },
     textarea: {
-      width: '100%',
-      border: '1px solid #A9A9A9',
-      minHeight: '200px',
-      fontSize: '16px',
-      padding: '5px',
-    },
+      width: "100%",
+      border: "1px solid #A9A9A9",
+      minHeight: "200px",
+      fontSize: "16px",
+      padding: "5px"
+    }
   },
   stars: {
-    marginTop: '-15px',
+    marginTop: "-15px"
   },
   title: {
     container: {
-      paddingTop: '20px',
+      paddingTop: "20px"
     },
     input: {
-      width: '100%',
-      fontSize: '16px',
-      padding: '5px',
-      backgroundColor: '#F2F2F2',
-      border: '1px solid #A9A9A9',
-    },
+      width: "100%",
+      fontSize: "16px",
+      padding: "5px",
+      backgroundColor: "#F2F2F2",
+      border: "1px solid #A9A9A9"
+    }
   },
   company: {
-    color: '#428bca',
-    fontWeight: 550,
-  },
+    color: "#428bca",
+    fontWeight: 550
+  }
 };
